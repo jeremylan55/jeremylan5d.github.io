@@ -107,6 +107,7 @@ h2 {
    MENU CONFIGURATION
    ========================================================================== */
 /* Push the body after clicking the menu button */
+
 .body-push {
 	overflow-x: hidden;
 	position: relative;
@@ -167,9 +168,10 @@ h2 {
    ========================================================================== */
 #welcome{
 	min-height: 100%;
-	margin-top: -300px ;
+	margin-top: -350px;
+	margin-left: -10px;
 	text-shadow: 5px 5px 5px #cb1919;
-	font:normal 120pt Bit;
+	font:normal 110pt Bit;
 	color:#FFFFFF;
 	text-shadow: 0 1px 0 #ccc,
 	0 8px 0 #c9c9c9,
