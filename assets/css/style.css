@@ -166,6 +166,7 @@ h2 {
    Wrap Sections
    ========================================================================== */
 #welcome{
+	min-height: 100%;
 	margin-top: -300px ;
 	text-shadow: 5px 5px 5px #cb1919;
 	font:normal 120pt Bit;
@@ -428,7 +429,7 @@ h2 {
 }
 #resume {
 	font-family: "Bit";
-	font-size: 50pt;
+	font-size: 30pt;
 	color: white;
 	text-align: center;
 	background-color: #39bb7f;
