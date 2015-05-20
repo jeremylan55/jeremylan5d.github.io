@@ -166,6 +166,7 @@ h2 {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+
 #welcome{
 	min-height: 100%;
 	margin-top: -350px;
@@ -366,8 +367,6 @@ h2 {
 	border-bottom: solid 2px #2f2f2f
 }
 
-.portfolio {
-	background-image: url(../img/about-sep2.jpg);
 
 }
 
@@ -486,6 +485,8 @@ h2 {
   position: relative;
   overflow: hidden;
   background-color: #2f2f2f;
+  margin-left: 0px;
+  margin-right: 0px;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
