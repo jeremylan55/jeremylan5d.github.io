@@ -166,10 +166,16 @@ h2 {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+
 #loader{
 	position: absolute;
 	top: 50%;
-	right: 50%;
+	right: 10%;
+	font-family: "Bit";
+	font-size: 24pt;
+}
+#loader:hover{
+	position: absolute;
 }
 #bg {
 	position: absolute;
@@ -377,7 +383,7 @@ h2 {
 }
 
 #portfoliowrap .proc:hover {
-	background-color: #eee;
+	background-color: #5fffff;
 	border-bottom: solid 2px #2f2f2f
 }
 
