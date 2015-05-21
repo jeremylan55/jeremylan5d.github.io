@@ -31,6 +31,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
    <style>
+
   	 div#load_screen{
   		background: #5fffff;
   		opacity: 1.0;
@@ -54,7 +55,7 @@
   <script>
   window.addEventListener("load",function(){
    		var load_screen = document.getElementById("load_screen");
-  		setTimeout(function(){document.body.removeChild(load_screen);},4000)
+  		setTimeout(function(){document.body.removeChild(load_screen);},10000)
   	});
   </script>
   
@@ -70,7 +71,9 @@
   			<img src="assets/parts/ground.png" align="top"  width="1600px"  class="animated bounceInUp">
   		</div>-->
   		<div id="loader" >
-  			<img src="assets/img/jeremylan_3.gif" class ="animated bounceInLeft">
+  			<p class="animated infinite flash">LOADING</P>
+  			<img src="assets/img/jeremylan_3.gif" class ="animated long bounceInLeft">
+
   		</div>
   	</div></div>
 
