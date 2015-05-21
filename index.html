@@ -32,33 +32,46 @@
     <![endif]-->
    <style>
   	 div#load_screen{
-  		background: #000;
+  		background: #5fffff;
   		opacity: 1.0;
   		position: fixed;
   		z-index: 10;
   		top: 0px;
   		width: 100%;
-  		height: 1600px;
+  		min-height: 100%;
 
   	}
 
   	div#load_screen > div#loading{
-  		color: #fff;
+  		color: #000;
   		width: 120px;
   		height: 24px;
-  		margin: 300px auto;
-  	}
+  		margin top:0px;
+  		margin-left: 0px;
+  		min-height: 100%;
+   	}
   </style>
   <script>
   window.addEventListener("load",function(){
    		var load_screen = document.getElementById("load_screen");
-  		setTimeout(function(){document.body.removeChild(load_screen);},0)
+  		setTimeout(function(){document.body.removeChild(load_screen);},3500)
   	});
   </script>
   
   </head>
-  	<!--<div id="load_screen"><div id="loading" class="animated fadeIn"><div class="atebits-loader">
-  	</div></div></div>-->
+  	<div id="load_screen"><div id="loading">
+  		<div id="bg">
+  			<img src="assets/parts/bg.png" align="top" width="1550px" class="animated bounceInUp">
+  		</div>
+  		<div id="wall">
+  			<img src="assets/parts/wall.png" align="top" width="1550px"  class="animated bounceInDown">
+  		</div>
+  		<div id="ground">
+  			<img src="assets/parts/ground.png" align="top" width="1550px"  class="animated bounceInUp">
+  		</div>
+  		<div id="loader" class="atebits-loader">
+  		</div>
+  	</div></div>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu" >
   	
@@ -109,13 +122,6 @@
 					    <img src="slideshow/01_c.jpg">
 					  </div>
 					</div>
-				 					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					  </ol>
 			   </div>
 			</div><! --/row -->
 		</div><! --/testimonials -->
@@ -157,9 +163,6 @@
 	
 	<! -- ABOUT SEPARATOR -->
 	
-	
-
-	<div class="sep about" data-stellar-background-ratio="0.1"></div>
 	
 	
 
@@ -601,14 +604,6 @@ itself queuing to get one.
 	<script src="assets/js/jquery.stellar.min.js"></script>
 	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
 	<script src="assets/js/main.js"></script>
-		<script>
-		$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 40
-			});
-		});
-		</script>
 		
 		<script type="text/javascript">
       $(function() {

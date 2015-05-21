@@ -166,7 +166,21 @@ h2 {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+#loader{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+}
+#bg {
+	position: absolute;
 
+}
+#ground {
+	position: absolute;
+}
+#wall {
+	position: absolute;
+}
 #welcome{
 	min-height: 100%;
 	margin-top: -350px;
