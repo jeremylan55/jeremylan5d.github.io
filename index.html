@@ -65,12 +65,12 @@
   <script>
   window.addEventListener("load",function(){
    		var load_screen = document.getElementById("load_screen");
-  		setTimeout(function(){document.body.removeChild(load_screen);},8000)
+  		setTimeout(function(){document.body.removeChild(load_screen);},100000)
   	});
   </script>
   
   </head>
-  	<div id="load_screen"><div id="loading">
+  	<div id="load_screen" ><div id="loading" class="animated fadeIn">
   		<!--<div id="bg">
   			<img src="assets/parts/bg.png" align="top"  width="1600px" class="animated bounceInUp">
   		</div>
@@ -80,15 +80,15 @@
   		<div id="ground">
   			<img src="assets/parts/ground.png" align="top"  width="1600px"  class="animated bounceInUp">
   		</div>-->
-  		<div id="loadingtext">
-  			<p class="animated infinite flash">LOADING</P>
+  		<div id="loader" class="animated medium bounceInDown">
+  			<img src="assets/img/jeremylan_5.gif" class="animated infinite bounce" width="80%">
+  		</div>
+
+  		<div id="loadingtext" class="animated short slideInUp">
+  			<p class="animated infinite short bounce rubberBand">LOADING</P>
 
   		</div>
-  		<div id="loader" >
-  			<img src="assets/img/jeremylan_3.gif" class ="animated infinite long bounceInLeft">
-
-
-  		</div>
+  		
   	</div></div>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu" >
