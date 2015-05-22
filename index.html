@@ -16,7 +16,7 @@
     <link href="assets/css/animate.css" rel="stylesheet" >
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/spinners.css">
-
+    <link rel="stylesheet" href="css/modal.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -30,6 +30,16 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   <style>
+            #btn-close-modal {
+                width:100%;
+                text-align: center;
+                cursor:pointer;
+                color:#fff;
+            }
+
+        </style>
+
    <style>
 
   	 div#load_screen{
@@ -92,13 +102,15 @@
 						WELCOME</br>
 						TO MY</br>PORTFOLIO
 					</div>
-					<nav id="navBar">
 
-						<div><a href="#aboutmi" class="smoothScroll"><h8>About</h8></a></div>
-   						<div><a href="#engineering" class="smoothScroll"><h8>Engineering Projects</h8></a></div>
-						<div><a href="#art" class="smoothScroll"><h8>Digital Arts</h8></a></div>
-						<div><a href="#pub" class="smoothScroll"><h8>Publications</h8></a></div>
-						<div><a href="#contact" class="smoothScroll"><h8>Download & Contact</h8></a></div>
+<! -- NAVBAR -->
+
+					<nav id="navBar">
+						<div ><a data-toggle="modal" href="#aboutmi"><h8>About</h8></a></div>
+   						<div><a data-toggle="modal" href="#eng" ><h8>Engineering Projects</h8></a></div>
+						<div><a data-toggle="modal" href="#art" ><h8>Digital Arts</h8></a></div>
+						<div><a data-toggle="modal" href="#pub" ><h8>Publications</h8></a></div>
+						<div><a data-toggle="modal" href="#contact" ><h8>Download & Contact</h8></a></div>
 					</nav>
 
 				</div>
@@ -106,8 +118,13 @@
 		</div><! --/container -->
 	</div><! --/headerwrap -->
 	
-<!--=========================-Slideshows=============================-->
- 	<section id="aboutmi" name="aboutmi"></section>
+	
+
+<div class="modal fade" id="aboutmi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <section id="aboutmi" name="aboutmi"></section>
 		
 		<div id="testimonials">
 			<div class="row">
@@ -163,21 +180,34 @@
 						</div>		
 			</div><!-- /container -->
 		</div><! --/aboutwrap -->
+        </div>
+        <div class="modal-footer">
+          	<a type="button" data-dismiss="modal">CLOSE
+        	</a>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->	
+</div>
 
 
 
 
-	
-	
-	<! -- ABOUT SEPARATOR -->
-	
-	
+<! -- Engineering Projects -->
 	
 
-	<! -- Engineering Projects -->
-	
 
-	<section id="engineering" name="engineering"></section>
+
+
+<div class="modal fade" id="eng" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        	<div class="modal-footer">
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#aboutmi" >PREVIOUS
+        	</a>
+      </div>
+
+        	<section id="engineering" name="engineering"></section>
 		
 		<div id="portfoliowrap">
 			<div class="container">
@@ -278,13 +308,36 @@
 				</div><! -- /row -->
 			</div><! --/container -->
 		</div><! --/Portfoliowrap -->
+        <div class="modal-footer">
+          	<a type="button" data-dismiss="modal">CLOSE
+        	</a>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
 
 
-<! -- ENGINEERING PROJECTS ENDS -->
 
-<! -- ARTS STARTS -->
-		
-	<section id="art" name="art"></section>
+
+
+  <! -- ENGINEERING PROJECTS ENDS -->
+
+
+
+
+  <! -- ARTS STARTS -->
+
+
+<div class="modal fade" id="art" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        	<div class="modal-footer">
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#eng" >PREVIOUS
+        	</a>
+      </div>
+
+        		<section id="art" name="art"></section>
 
 		<div id="portfoliowrap">
 			<div class="container">
@@ -394,12 +447,48 @@
 
 				</div><! -- /row -->
 			</div><! --/container -->
-		
+		</div><! --/Portfoliowrap -->
+        <div class="modal-footer">
+          	<a type="button" data-dismiss="modal">CLOSE
+        	</a>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+
+
 		<! -- ARTS ENDS-->
+
+		
+
+
+
+
+
+
+
+
+
+
+
 
 		<! -- MAG STARTS-->
 
 
+
+
+
+
+
+
+<div class="modal fade" id="pub" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+         <div class="modal-footer">
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#art" >PREVIOUS
+        	</a>
+        </div>
 
 		<section id="pub" name="pub"></section>
 
@@ -535,15 +624,35 @@ itself queuing to get one.
 				</div><! -- /row -->
 			</div><! --/container -->
 
-		</div><! --/Portfoliowrap -->	
-	
-
-
+		</div><! --/Portfoliowrap -->       
+		<div class="modal-footer">
+          	<a type="button" data-dismiss="modal">CLOSE
+        	</a>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
 
 
 
 	<! --RESUME-->
 	
+
+
+
+
+
+
+
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        	<div class="modal-footer">
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#pub" >PREVIOUS
+        	</a>
+      </div>
+		<section id="contact" name="contact"></section>
 
 
 	<div id="resume">
@@ -571,17 +680,10 @@ itself queuing to get one.
 
 
 	</div>
-</div>
+</div>      
 
 
 
-
-
-
-
-	<section id="contact" name="contact"></section>
-	
-	<! -- CONTACT SEPARATOR -->	
 	<div id="contactwrap">
 		<div class="container">
 			<div class="row">
@@ -601,18 +703,34 @@ itself queuing to get one.
 				</div>	
 			</div><! --/row -->
 		</div><!-- /container -->
-	</div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+	<div class="modal-footer">
+          	<a type="button" data-dismiss="modal">CLOSE
+        	</a>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="assets/js/classie.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
-	<script src="assets/js/jquery.stellar.min.js"></script>
 	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
 	<script src="assets/js/main.js"></script>
-		
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+   </script>
+
+	<script>
 		<script type="text/javascript">
       $(function() {
         //    fancybox
