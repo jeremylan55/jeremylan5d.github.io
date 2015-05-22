@@ -65,7 +65,7 @@
   <script>
   window.addEventListener("load",function(){
    		var load_screen = document.getElementById("load_screen");
-  		setTimeout(function(){document.body.removeChild(load_screen);},10000)
+  		setTimeout(function(){document.body.removeChild(load_screen);},8000)
   	});
   </script>
   
@@ -124,6 +124,10 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
+        	<div class="modal-footer">
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#eng" >NEXT
+        	</a>
+      </div>
           <section id="aboutmi" name="aboutmi"></section>
 		
 		<div id="testimonials">
@@ -203,7 +207,7 @@
       <div class="modal-content">
         <div class="modal-body">
         	<div class="modal-footer">
-          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#aboutmi" >PREVIOUS
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#art" >NEXT
         	</a>
       </div>
 
@@ -333,7 +337,7 @@
       <div class="modal-content">
         <div class="modal-body">
         	<div class="modal-footer">
-          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#eng" >PREVIOUS
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#pub" >NEXT
         	</a>
       </div>
 
@@ -486,7 +490,7 @@
       <div class="modal-content">
         <div class="modal-body">
          <div class="modal-footer">
-          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#art" >PREVIOUS
+          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#contact" >NEXT
         	</a>
         </div>
 
@@ -648,10 +652,7 @@ itself queuing to get one.
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-        	<div class="modal-footer">
-          	<a type="button" data-dismiss="modal" data-toggle="modal" href="#pub" >PREVIOUS
-        	</a>
-      </div>
+
 		<section id="contact" name="contact"></section>
 
 
@@ -703,10 +704,12 @@ itself queuing to get one.
 				</div>	
 			</div><! --/row -->
 		</div><!-- /container -->
-	<div class="modal-footer">
+
+      </div>
+      			<div class="modal-footer">
           	<a type="button" data-dismiss="modal">CLOSE
         	</a>
-      </div><!-- /.modal-content -->
+<!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 </div>
