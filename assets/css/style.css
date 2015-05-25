@@ -192,16 +192,6 @@ h2 {
 	left: 37%;
 	bottom: 26%;
 }
-#bg {
-	position: absolute;
-
-}
-#ground {
-	position: absolute;
-}
-#wall {
-	position: absolute;
-}
 #welcome{
 	min-height: 100%;
 	margin-top: -350px;
@@ -243,6 +233,29 @@ h2 {
 	0 20px 20px rgba(0,0,0,.15);	
 
 }
+#copyrightloader{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 12pt;
+	font-family: "Bit";
+	color:#2f2f2f;
+	padding-right: 10px;
+
+}
+
+
+#copyright{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 12pt;
+	font-family: "Bit";
+	color:#fff;
+	padding-right: 10px;
+
+}
+
 
 #mag {
 	text-align: center;
@@ -490,8 +503,8 @@ h2 {
 	font-size: 30pt;
 	color: white;
 	text-align: center;
-	background-color:   #39bb7f;
-	
+	background-color: #39bb7f;
+	padding-bottom: 10px;
 	text-shadow: 0 1px 0 #ccc,
 	0 2px 0 #c9c9c9,
 	0 3px 0 #bbb,
@@ -509,8 +522,8 @@ h2 {
 #contactwrap {
 	background-color:  #39bb7f;
 	margin-top: 0px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 #contactme {
