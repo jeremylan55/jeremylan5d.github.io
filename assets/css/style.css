@@ -347,7 +347,7 @@ h2 {
 }
 #profile_name {
 	position: absolute;
-	top: 0px;
+	top: 30px;
 	right: 0px;
 	z-index: 1;
 	margin-top: 0px;

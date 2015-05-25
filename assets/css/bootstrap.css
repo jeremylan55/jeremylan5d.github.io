@@ -5151,6 +5151,7 @@ button.close {
   opacity: .5;
 }
 .modal-header {
+  z-index: 3;
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
