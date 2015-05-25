@@ -258,7 +258,7 @@ h2 {
 
 
 #mag {
-	text-align: center;
+	text-align: left;
 
 }
 #headerwrap {
@@ -292,7 +292,9 @@ h2 {
 	/*text-shadow: 2px 2px 2px #000;*/
 }
 #carousel-example-generic{
+	position: relative;
 	width: 100%;
+	z-index: 0;
 }
 
 #modal-footer {
@@ -318,7 +320,9 @@ h2 {
 }
 
 #profile_pic {
-	margin-top: -270px;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
 	text-shadow: 0 1px 0 #ccc,
 	0 2px 0 #c9c9c9,
 	0 3px 0 #bbb,
@@ -335,9 +339,15 @@ h2 {
 
 }
 #profile_name {
-	margin-top: -20px;
+	position: absolute;
+	top: 100px;
+	right: 0px;
+	z-index: 1;
+	margin-top: 0px;
 	color: white;
 	font-family: "Bit";
+	font-size: 24pt;
+	text-align: right;
 
 	text-shadow: 0 1px 0 #ccc,
 	0 2px 0 #c9c9c9,
@@ -355,8 +365,9 @@ h2 {
 }
 /* About Wrap & Conf */
 #aboutwrap {
+	position: relative;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-right: 0px;
 	font-size: 16pt;
 }
 .name {
