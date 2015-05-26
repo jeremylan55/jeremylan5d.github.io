@@ -742,8 +742,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 3%;
-  padding-left: 6%;
+  padding-right: 2%;
+  padding-left: 8%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -5094,15 +5094,16 @@ button.close {
 }
 .modal {
   position: absolute;
-  width: 88%;
+  width: 92%;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 6%;
+  left: 4%;
   z-index: 1050;
   display: none;
   overflow: auto;
   overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
