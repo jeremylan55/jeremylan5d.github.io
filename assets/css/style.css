@@ -190,12 +190,12 @@ h2 {
 #loader{
 	position: absolute;
 	left: 37%;
-	bottom: 26%;
+	bottom: 24%;
 }
 #welcome{
 	min-height: 100%;
 	margin-top: -350px;
-	margin-left: -10px;
+	margin-left: 0px;
 	text-shadow: 5px 5px 5px #cb1919;
 	font:normal 110pt Bit;
 	color:#FFFFFF;
