@@ -1,0 +1,125 @@
+@font-face { font-family: generica; src: url(../fonts/Generica.otf); } 
+@font-face { font-family: generica; font-weight: bold; src: url(../fonts/Generica.otf);}
+
+html {
+    height: 100%
+}
+body {
+	background: linear-gradient(#fc5258, #E84A5F);
+	background: -webkit-linear-gradient(#fc5258,#E84A5F)
+	background-repeat: no-repeat;
+}
+#canvas{
+	position:absolute;
+	margin-left: -250px;
+	margin-top: -250px;
+	top: 50%;
+	left: 50%;
+}
+#start{
+	margin-left: -60px;
+	margin-top: -30px;
+	color: #FC5258;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+}
+#start:active{
+	border-radius: 15px;
+    border-style:inset;
+    border-width:2px;
+    padding: 0px; 
+    width: 118px;
+    height: 56px;
+}
+#reset{
+	margin-left: -60px;
+	margin-top: -30px;
+	color: #FC5258;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+}
+#reset:active{
+	border-radius: 15px;
+    border-style:inset;
+    border-width:2px;
+    padding: 0px; 
+    width: 118px;
+    height: 56px;
+}
+#input1 {
+	position: absolute;
+	margin-left: -81px;
+	margin-top: -20px;
+	top: 50%;
+	left: 50%;
+	z-index:  10;
+}
+#alert {
+	width: 160px;
+	height: 40px;
+	position: relative;
+	margin-left: -80px;
+	margin-top: 20px;
+	color: #2A363B;
+	font-family: generica;
+	text-align: center;
+	left: 50%;
+}
+#timer, #dummyTimer{
+	position: absolute;
+	margin-left: -100px;
+	margin-top: -20px;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 40px;
+	z-index: 1;
+	font-size: 30pt;
+	font-family: generica;
+	color: #2A363B;
+	text-align: center;
+}
+#alarmDone {
+	position: absolute;
+	margin-left: -100px;
+	margin-top: -100px;
+	top: 50%;
+	left: 50%;
+	z-index:  1;
+}
+
+#circle {
+	position: absolute;
+	margin-left: -100px;
+	margin-top: -100px;
+	top: 50%;
+	left: 50%;
+	z-index:  0;
+}
+input {
+	border: 0px;
+	background: #2A363B;
+	border-radius: 15px;
+	color: #FC5258;
+	font-size: 10pt;
+	font-family: generica;
+	text-align: center;
+	width: 50px;
+	height: 40px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FC5258;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FC5258;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FC5258;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #FC5258;
+}

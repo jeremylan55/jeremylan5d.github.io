@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<body >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet" >
+    <link rel="stylesheet" href="assets/css/style.css" >
+</head>
+<script type="text/javascript">
+    window.onload = function() {
+    document.getElementById("reset").style.visibility = "hidden";
+    document.getElementById("alarmDone").style.visibility = "hidden";
+    }
+</script>
+<div id = "canvas"></div>
+<form id = "input1">
+    <input type="text" id="userHour" placeholder="HOUR" class= "animated first flipInY">
+    <input type="text" id="userMin" placeholder="MIN" class= "animated second flipInY">
+    <input type="text" id="userSec" placeholder="SEC" class= "animated  third flipInY">
+    <div id = "alert"></div>
+</form>
+
+<div id = "menu">
+
+<div id = "start" class="animated short bounceIn">
+    <img src="assets/img/start_button.png" onclick="runTimer()" width= "120">
+</div>
+
+<div id = "reset" class="animated bounceInDown">
+    <img src="assets/img/reset_button.png" onclick="resetTimer()"width= "120" >
+</div>
+</div>
+<div id="dummyTimer"></div>
+<div id="timer"></div>
+<div id="restartTimer"></div>
+<audio id="alarmSound"><source src ="assets/img/beep.mp3" type = "audio/mpeg"></audio>
+<div id = "alarmDone" class "animated flipInY">
+    <img src="assets/img/done.png" width= "200" >
+</div>
+<div id="circle" class="animated zoomIn">
+    <img src="assets/img/bg.png" width="200px">
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+	<script src="assets/js/raphael.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
